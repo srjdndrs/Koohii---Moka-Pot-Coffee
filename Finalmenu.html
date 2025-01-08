@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+    <style>
+        @font-face {
+        font-family: 'Virtual'; 
+        src: url('Virtual.otf') format('opentype'); 
+}
+        header{
+            text-align: center;
+            
+        }
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #625b4c;
+            color: #fff;
+            margin: 0;
+            padding: 20px;
+        }
+        .menu{
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .pastry-section{
+            max-width: 1161px;
+            margin: 0 auto;
+            display: block;
+            flex-wrap: wrap;
+        }
+
+        .pastry-section h2{
+            text-align: center;
+        }
+
+        .menu h1{
+            text-align: center;
+            width: 100%;
+            margin-bottom: 20px;
+            font-family: 'TEX GYRE TERMES', serif;
+            font-size: 40px;
+        }
+        .section , .pastry-section{
+            flex: 1;
+            background-color: #3c3a32;
+            padding: 20px;
+        }
+        .section h2 , .pastry-section h2{
+            text-align: center;
+            font-size: 1.5em;
+            margin-bottom: 10px;
+            border-bottom: 2px solid #ffffff;
+            border-top:2px solid #ffffff ;
+        }
+        .section table, .pastry-section table{
+            width: 100%;
+            border-collapse: collapse;
+        }
+        .section th, .section td , .pastry-section th, .pastry-section td{
+            padding: 5px;
+            text-align: left;
+        }
+        .section .best-seller {
+            color: #f4d03f;
+        }
+
+        .best-seller::after {
+            content: "";
+            display: inline-block;
+            width: 16px;
+            height: 16px;
+            background-image: url('beans.png'); 
+            background-size: contain;
+            background-repeat: no-repeat;
+            vertical-align: middle; 
+            margin-left: 8px; 
+        }
+        .best-seller-price {
+        color: #f4d03f; 
+        font-weight: bold; 
+        }
+        .best-seller-img {
+            width: 16px; 
+            height: 16px; 
+        }
+
+        .Non-Coffee{
+            margin-top: 138.5px;
+        }
+
+        .Dalgona{
+            margin-top: 70px;
+        }
+
+        .Soda{
+            margin-top: 10px;
+        }
+
+        .Matcha{
+            margin-top: 20px;
+        }
+
+        .Add-ons{
+            margin-top:18px;
+        }
+        .best-seller-header{
+            display:block;
+            text-align:end;
+            color: #f4d03f;
+        }
+        best-seller-header img{
+            width: 20px;
+            height: 20px;
+        }
+        .best-seller-header {
+            display: flex;
+            align-items: center;
+        }
+
+        .best-seller-img {
+            margin-right: 8px; /* Adjust the margin as needed */      
+
+        }
+        .best-seller-header {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            color: #f4d03f;
+        }
+
+        .best-seller-img {
+            width: 20px;
+            height: 20px;
+            margin-right: 8px; /* Adjust the margin as needed */
+        }
+        .best-seller-text {
+            font-size: 20px; /* Adjust the font size as needed */
+        }
+        .best-seller-header {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            color: #f4d03f;
+        }
+
+        .best-seller-img {
+            width: 20px;
+            height: 20px;
+            margin-right: 8px; /* Adjust the margin as needed */
+        }
+
+        .best-seller-text {
+            font-size: 14px; /* Adjust the font size as needed */
+        }
+
+        h1 {
+            font-size: 28px; /* Adjust the font size as needed */
+        }
+    </style>
+</head>
+<header><img src="logo.png" alt="logo" style="width:90px;height:90px;"></header>
+<body>
+    <div class="menu">
+        <h1>MENU <span class="best-seller-header"><img src="beans.png" class="best-seller-img"><span class="best-seller-text">Best Seller</span></span></h1>
+
+        <!-- ICED COFFEE SECTION -->
+        <div class="section">
+            <h2>ICED COFFEE</h2>
+            <table>
+                <tr>
+                    <th></th>
+                    <th>12 oz</th>
+                    <th>16 oz</th>
+                    <th>22 oz</th>
+                </tr>
+                <tr>
+                    <td>Cafe Latte</td>
+                    <td>59</td>
+                    <td>69</td>
+                    <td>89</td>
+                </tr>
+                <tr>
+                    <td class="best-seller">Caramel Macchiato</td>
+                    <td>59</td>
+                    <td>69</td>
+                    <td>99</td>
+                </tr>
+                 <tr>
+                     <td class="best-seller">Brown Sugar Latte</td>
+                     <td>59</td>
+                     <td>69</td>
+                     <td>99</td>
+               </tr>
+                <tr>
+                    <td>French Vanilla Latte</td>
+                    <td>59</td>
+                    <td>69</td>
+                    <td>99</td>
+                </tr><tr>
+                    <td>Hazelnut Latte</td>
+                    <td>59</td>
+                    <td>69</td>
+                    <td>99</td>
+                </tr><tr>
+                    <td>Hazelnut Mocha Latte</td>
+                    <td>59</td>
+                    <td>69</td>
+                    <td>99</td>
+                </tr><tr>
+                    <td>Cinnamon Latte</td>
+                    <td>59</td>
+                    <td>69</td>
+                    <td>99</td>
+                </tr><tr>
+                    <td>Ube Latte</td>
+                    <td>59</td>
+                    <td>69</td>
+                    <td>109</td>
+                </tr><tr>
+                    <td class="best-seller">Spanish Latte</td>
+                    <td>59</td>
+                    <td>69</td>
+                    <td>109</td>
+                </tr><tr>
+                    <td class="best-seller">White Mocha</td>
+                    <td>59</td>
+                    <td>69</td>
+                    <td>109</td>
+                </tr>
+                <tr>
+                    <td>Oreo Coffee</td>
+                    <td>59</td>
+                    <td>69</td>
+                    <td>109</td>
+                </tr>
+            </table>
+
+            <!--ICED BLACK COFFEE SECTION-->
+
+            <h2>ICED BLACK COFFEE</h2>
+            <table>
+                <tr>
+                    <th></th>
+                    <th>12 oz</th>
+                    <th>16 oz</th>
+                    <th>22 oz</th>
+                </tr>
+                <tr>
+                    <td>Americano</td>
+                    <td>59</td>
+                    <td>69</td>
+                    <td>89</td>
+                </tr>
+                <tr>
+                    <td class="best-seller">Sweet Black Caramel</td>
+                    <td>59</td>
+                    <td>69</td>
+                    <td>89</td>
+                </tr>
+                <tr>
+                    <td>Caramel</td>
+                    <td>59</td>
+                    <td>69</td>
+                    <td>89</td>
+                </tr>
+                <tr>
+                    <td>Hazelnut</td>
+                    <td>59</td>
+                    <td>69</td>
+                    <td>89</td>
+                </tr><tr>
+                    <td class="best-seller">French Vanilla</td>
+                    <td>59</td>
+                    <td>69</td>
+                    <td>89</td>
+            </table>
+
+            <!--DALGONA SERIES-->
+            <h2 class="Dalgona">DALGONA SERIES</h2>
+            <table>
+                <tr>
+                    <th></th>
+                    <th>12 oz</th>
+                    <th>16 oz</th>
+                    <th>22 oz</th>
+                </tr>
+                <tr>
+                    <td>Original</td>
+                    <td>59</td>
+                    <td>69</td>
+                    <td>89</td>
+                </tr>
+                <tr>
+                    <td class="best-seller">French Vanilla</td>
+                    <td>59</td>
+                    <td>69</td>
+                    <td>99</td>
+                </tr>
+                <tr>
+                    <td>Caramel</td>
+                    <td>59</td>
+                    <td>69</td>
+                    <td>99</td>
+                </tr>
+                <tr>
+                    <td>Hazelnut</td>
+                    <td>59</td>
+                    <td>69</td>
+                    <td>99</td>
+                </tr><tr>
+                    <td class="best-seller">Brown Sugar</td>
+                    <td>59</td>
+                    <td>69</td>
+                    <td>99</td>
+            </table>
+
+            <!--MATCHA SERIES SECTION-->
+            <h2 class="Matcha">MATCHA SERIES</h2>
+            <table>
+                <tr>
+                    <th></th>
+                    <th>16 oz</th>
+                    <th>22 oz</th>
+                </tr>
+                <tr>
+                    <td class="best-seller">Matcha Latte</td>
+                    <td>89</td>
+                    <td>109</td>
+                </tr>
+                <tr>
+                    <td>Blueberry Matcha</td>
+                    <td>89</td>
+                    <td>109</td>
+                </tr>
+                <tr>
+                    <td class="best-seller">Strawberry Matcha</td>
+                    <td>89</td>
+                    <td>109</td>
+                </tr>
+                <tr>
+                    <td>Matcha Coffee</td>
+                    <td>99</td>
+                    <td>119</td>
+                </tr><tr>
+                    <td>Mixed Berries Matcha</td>
+                    <td>99</td>
+                    <td>119</td>
+            </table>
+
+        </div>
+
+        <!-- HOT DRINKS SECTION -->
+        <div class="section">
+            <h2>HOT DRINKS</h2>
+            <table>
+                <tr>
+                    <th></th>
+                    <th>8 oz</th>
+                    <th>12 oz</th>
+                </tr>
+                <tr>
+                    <td>Americano</td>
+                    <td>49</td>
+                    <td>69</td>
+                </tr>
+                <tr>
+                    <td class="best-seller">Dark Chocolate</td>
+                    <td>59</td>
+                    <td>79</td>
+                </tr>
+                <tr>
+                    <td>Berry Vanilla</td>
+                    <td>59</td>
+                    <td>89</td>
+                </tr>
+                <tr>
+                    <td>Sweet Chocolate</td>
+                    <td>59</td>
+                    <td>79</td>
+                </tr>
+                <tr>
+                    <td class="best-seller">Matcha Latte</td>
+                    <td>59</td>
+                    <td>79</td>
+                </tr>
+                <tr>
+                    <td>Berry Vanilla</td>
+                    <td>59</td>
+                    <td>89</td>
+                </tr>
+                <tr>
+                    <td class="best-seller">Hazelnut Latte</td>
+                    <td>69</td>
+                    <td>89</td>
+                </tr>
+            </table>
+
+            <!--Non -Coffee -->
+            <h2 class="Non-Coffee">NON-COFFEE</h2>
+            <table>
+                <tr>
+                    <th></th>
+                    <th>12 oz</th>
+                    <th>16 oz</th>
+                    <th>22 oz</th>
+                </tr>
+                <tr>
+                    <td class="best-seller">Milky Strawberry</td>
+                    <td>69</td>
+                    <td>79</td>
+                    <td>99</td>
+                </tr>
+                <tr>
+                    <td>Milky Blueberry</td>
+                    <td>69</td>
+                    <td>79</td>
+                    <td>99</td>
+                </tr>
+                <tr>
+                    <td>Milky Oreo</td>
+                    <td>69</td>
+                    <td>79</td>
+                    <td>99</td>
+                </tr>
+                <tr>
+                    <td>Milky Choco</td>
+                    <td>69</td>
+                    <td>79</td>
+                    <td>99</td>
+                </tr>
+                <tr>
+                    <td class="best-seller">Milky Hazelnut Choco</td>
+                    <td>69</td>
+                    <td>89</td>
+                    <td>109</td>
+                </tr>
+                <tr>
+                    <td>Milky Mixed Berries</td>
+                    <td>69</td>
+                    <td>89</td>
+                    <td>109</td>
+                </tr>
+                <tr>
+                    <td class="best-seller">Pure Cocoa Chocolate</td>
+                    <td>69</td>
+                    <td>89</td>
+                    <td>109</td>
+                </tr>
+            </table>
+
+            <!--FLAVORED SODA SECTION -->
+            <h2 class="Soda">FLAVORED SODA</h2>
+            <table>
+                <tr>
+                    <th></th>
+                    <th>12 oz</th>
+                    <th>16 oz</th>
+                    <th>22 oz</th>
+                </tr>
+                <tr>
+                    <td>Blueberry</td>
+                    <td>49</td>
+                    <td>59</td>
+                    <td>79</td>
+                </tr>
+                <tr>
+                    <td class="best-seller">Strawberry</td>
+                    <td>49</td>
+                    <td>59</td>
+                    <td>79</td>
+                </tr>
+                <tr>
+                    <td>Kiwi</td>
+                    <td>49</td>
+                    <td>59</td>
+                    <td>79</td>
+                </tr>
+                <tr>
+                    <td>Lemon</td>
+                    <td>49</td>
+                    <td>59</td>
+                    <td>79</td>
+                </tr>
+                <tr>
+                    <td class="best-seller">Lychee</td>
+                    <td>49</td>
+                    <td>59</td>
+                    <td>79</td>
+                </tr>
+            </table>
+
+            <!--ADD ONS SECTION -->
+            <h2 class="Add-ons">ADD ONS</h2>
+            <table>
+                <tr>
+                    <th></th>
+                    <th>Price</th>
+                </tr>
+                <tr>
+                    <td>Espresso Shot</td>
+                    <td>20</td>
+                </tr>
+                <tr>
+                    <td>Coffee Jelly</td>
+                    <td>20</td>
+                </tr>
+                <tr>
+                    <td>Milk</td>
+                    <td>15</td>
+                </tr>
+                <tr>
+                    <td>Syrup (Hazelnut, Vanilla, Caramel)</td>
+                    <td>20</td>
+                </tr>
+                <tr>
+                    <td>Sauce (Caramel, Chocolate)</td>
+                    <td>15</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <div class="pastry-section">
+        <!--Pastry SECTION-->
+        <h2 class="Pastry">PASTRY</h2>
+        <table>
+            <tr>
+                <td></td>
+                <td>Price</td>
+            </tr>
+            <tr>
+                <td>Waffle (Vanilla, Chocolate)</td>
+                <td>175</td>
+            </tr>
+            <tr>
+                <td>Mini Donuts(Vanilla,Chocolate)</td>
+                <td>100</td>
+
+            </tr>
+            <tr>
+                <td>Croffle</td>
+                <td>59</td>
+            </tr>
+        </table>
+
+    </div>
+
+</body>
+</html>
