@@ -98,11 +98,6 @@ nav a:hover {
     transition: top 0.3s ease; 
 }
 
-.description {
-    background-color: #8B5A2B; 
-    color: white; 
-    padding: 40px; 
-}
 .about-section {
     background-color: #625b4c; 
     padding: 50px 20px; 
@@ -152,7 +147,8 @@ nav a:hover {
 
 .about-text p {
     font-size: 1.5em; 
-    line-height: 1.5;  
+    line-height: 1.5; 
+    color: #efefef; 
     text-align: center; 
     margin-top: 60px; 
     margin-left: 20px;
@@ -340,19 +336,20 @@ footer a:hover {
     }
 
     .about-text h3 {
-        font-size: 2.5em; 
+        font-size: 2em; 
         margin-top: -20px; 
         margin-left: auto;
         margin-right: auto;
     }
 
     .about-text p {
-        font-size: 1.5em; 
+        font-size: 1em; 
         margin-left: auto;
         margin-right: auto;
         margin-top: 30px;
         margin-bottom: 15px;
         max-width: 90%; 
+        text-align: justify;
     }
 
     .about-image img {
@@ -385,8 +382,8 @@ footer a:hover {
     }
 
     .about-text h3 {
-        font-size: 0.5em; 
-        margin-top: -10px;
+        font-size: 1em; /* Adjusted to make it smaller */
+        margin-top: 15px;
         text-align: center;
     }
 
@@ -441,14 +438,13 @@ footer a:hover {
     }
 
     .about-text h3 {
-        font-size: 2.5em; 
+        font-size: 2.2em; 
     }
 
     .about-text p {
-        font-size: 1.5em; 
+        font-size: 1.2em; 
         margin-top: 30px;
-        text-align: center;
-        padding-left: 0;
+        text-align: justify;
     }
 
     .about-image {
